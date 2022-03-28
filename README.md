@@ -1,45 +1,44 @@
-# Das Kassiererproblem 
+# The Cashier Problem Projekt
 
-Erstellen Sie ein Programm, das einer Kassiererin hilft, den Kunden angemessenes Wechselgeld zu geben. Das Programm soll die Menge an Scheinen und Münzen für das Wechselgeld des Kunden zurückgeben. 
+Es ist ein Programm, das einer Kassierer hilft, den Kunden angemessenes Wechselgeld (die Menge an Scheinen und Münzen) zu geben.
 
-Beispiel: Wenn der Preis 3,75 € beträgt und der bezahlte Betrag 50 €, dann sollte der Kunde 46,25 € Wechselgeld zurückbekommen. 
-* Die erwartete Ausgabe sollte sein: 
-* 2 x 20 € // 2 Zwanzig-Euro-Scheine
-* 1 x 5 € // 1 Fünf-Euro-Schein
-* 1 x 1 € // 1 Euro
-* 1 x 0,2 € // 1 Zwanzig-Cent-Münze
-* 1 x 0,05 € // 1 Fünf-Cent-Münze
+Ich habe mit dem Englisch den Code gebaut und auf der suche im Googel wie (MDN) seite und hilfe von anderen.
 
-Beispiel: Preis: 4,50 €, Bezahlter Betrag: 20 €, Wechselgeld: 15.50
-* Erwartete Ausgabe: 
-* 1 x €10
-* 1 x €5
-* 1 x €0.5
+Mit (console.log) kann man immer testen ,ob die Schritte richtig sind, damit man weiter macht oder korrigiert.
+Und im Terminal (node.lösung.js) ausgeben, um das Ergebnis zu sehen.
 
-* Anmerkungen
-* Enthält Ausgaben für Ausnahmen, z. B. Preis: €4, bezahlter Betrag: €3. 
+# Beispiel 1 :
 
+Wenn der Preis 3,75 € beträgt und der bezahlte Betrag ( paid amount ) 50 €, dann sollte der Kunde 46,25 € Wechselgeld (receive) zurückbekommen.
 
----
+```js
+casher(50, 3.75);
+- Die erwartete Ausgabe sollte sein:
+- 2 x €20 // 2 twenty euro notes
+- 1 x €5 // 1 five euro note
+- 1 x €1 // 1 euro
+- 1 x €0.2 // 1 twenty cent coin
+- 1 x €0.05 // 1 five cent coin
+```
 
+# Beispiel 2 :
 
-# The Cashier Problem 
+Wenn der Preis 4.5 € beträgt und der bezahlte Betrag ( paid amount ) 20 €, dann sollte der Kunde 15.5 € Wechselgeld (receive) zurückbekommen.
 
-Create a program that helps a cashier give adequate change to customers. The program should return the amount of notes and coins for the customer's change. 
+```js
+casher(20, 4.5);
+- Die erwartete Ausgabe sollte sein:
+- 2 x €10 // 2 ten euro notes
+- 1 x €5 // 1 five euro note
+- 1 x €0.50 // 1 fifty cents coin
+```
 
-Example: If the price is €3.75 and the paid amount is €50, then the client should receive €46.25 back in change. 
-* The expected output should be: 
-* 2 x €20 // 2 twenty euro notes
-* 1 x €5 // 1 five euro note
-* 1 x €1 // 1 euro
-* 1 x €0.2 // 1 twenty cent coin
-* 1 x €0.05 // 1 five cent coin
+# Beispiel 3 :
 
-Example: Price: €4.50, Paid amount: €20, Change: 15.50
-* Expected output: 
-* 1 x €10
-* 1 x €5
-* 1 x €0.5
+Wenn der Preis 15 € beträgt und der bezahlte Betrag ( paid amount ) 10 €, dann reich es nicht Wechselgeld (receive) zurückzubekommen.
 
-* Notes
-* Include outputs for exceptions e.g. price: €4, paid amount: €3. 
+```js
+casher(10, 15);
+- Die erwartete Ausgabe sollte sein:
+- that is not enough
+```

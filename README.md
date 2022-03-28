@@ -2,7 +2,7 @@
 
 Es ist ein Programm, das einer Kassierer hilft, den Kunden angemessenes Wechselgeld (die Menge an Scheinen und Münzen) zu geben.
 
-Ich habe mit dem Englisch den Code gebaut und auf der suche im Googel wie (MDN) seite und hilfe von anderen.
+Ich habe mit JavaScript Sprache den Code gebaut und auf der suche im Googel wie (MDN) seite und hilfe von anderen.
 
 Mit (console.log) kann man immer testen ,ob die Schritte richtig sind, damit man weiter macht oder korrigiert.
 Und im Terminal (node.lösung.js) ausgeben, um das Ergebnis zu sehen.
